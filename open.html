@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/open.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bg-undangan">
+                jsdnakjndskndasdnjkandsn
+
+        </div>
+
+        <section class="bg-nama">
+            <h1 class="title-nama">Om Swastiastu</h1>
+            <div class="garis">
+
+            </div>
+            <p>Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa/ Tuhan Yang Maha Esa, kami bermaksud mengundang Bapak/ Ibu/ Saudara/ i pada Upacara Mepandes (Potong Gigi) Kami.</p>
+            <div class="bg-bulet">
+                <div class="luar-bulet">
+                    <div class="bulet">
+                        <div class="dlm-bulet"></div>
+                    </div>
+                    <h1>Ni Putu Ayu Nadira</h1>
+                </div>
+                <div class="luar-bulet">
+                    <div class="bulet">
+                        <div class="dlm-bulet"></div>
+                    </div>
+                    <h1>Ni Putu Ayu Nadira</h1>
+                </div>
+                <div class="luar-bulet">
+                    <div class="bulet">
+                        <div class="dlm-bulet"></div>
+                    </div>
+                    <h1>Ni Putu Ayu Nadira</h1>
+                </div>
+            </div>
+        </section>
+        <section class="bg-countdown">
+            <div class="countdown">
+                <div class="container-day">
+                    <h3 class="day">67</h3>
+                    <h3 class="ket">day</h3>
+                </div>
+                <div class="container-day">
+                    <h3 class="hour">20</h3>
+                    <h3 class="ket">Hour</h3>
+                </div>
+                <div class="container-day">
+                    <h3 class="minute">45</h3>
+                    <h3 class="ket">Minute</h3>
+                </div>
+                <div class="container-day">
+                    <h3 class="second">34</h3>
+                    <h3 class="ket">Second</h3>
+                </div>
+            </div>
+        </section>
+        <section class="bg-save">
+            <h1 class="title-nama">Save the Date!</h1>
+            <div class="bg-detail">
+                <div class="detail">
+                    <div class="detailed">
+                        <div class="icon">
+                            <i>p</i>
+                        </div>
+                        <div class="text-detail">
+                            <h1>24 Maret 2024</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="div-bar"></div>
+                    <div class="detailed">
+                        <div class="icon">
+                            <i>p</i>
+                        </div>
+                        <div class="text-detail">
+                            <h1>24 Maret 2024</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="div-bar"></div>
+                    <div class="detailed">
+                        <div class="icon">
+                            <i>p</i>
+                        </div>
+                        <div class="text-detail">
+                            <h1>24 Maret 2024</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-map2">
+            <div class="bg-map">
+                <div class="map-container" data-aos="fade" data-aos-duration="1000">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d986.0281068492494!2d115.25283882923776!3d-8.680857673868559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6fb28e6735f7aca6!2zOMKwNDAnNTEuMSJTIDExNcKwMTUnMTIuMiJF!5e0!3m2!1sen!2sid!4v1664018981116!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <a href="https://goo.gl/maps/AoAbRiutNZ9QxGa96" class="btn btn-primary" data-aos="fade-up" data-aos-duration="1000">Buka Map</a>
+           
+        </section>
+        <section class="part-7">
+            <div class="our-work-txt">
+                <h1 id="our">Our</h1>
+                <h1 id="gallery">Gallery</h1>
+            </div>
+            <div class="our-work-txt-div">
+                <div class="scroll-work">
+                    <div class="scroll-img">
+                        <img src="img/4.png" alt="">
+                        <img src="img/2.jpg" alt="">
+                        <img src="img/3.jpg" alt="">
+                        <img src="img/5.jpg" alt="">
+                        <img src="img/cvundangan.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-end">
+            
+        </section>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+        let tl7 = gsap.timeline({
+            scrollTrigger:{
+                trigger: ".part-7",
+                start: "50% 50%",
+                end: "300% -200%",
+                pin:true,
+                markers: true,
+                scrub: 1,
+            },
+        });
+
+        tl7.to(".our-work-txt-div",{
+            height:"60vh",
+        }, 'height')
+
+        tl7.to(".our-work-txt",{
+            height:"60vh",
+        }, 'height')
+
+        tl7.to("#our",{
+            left: '0'
+        }, 'height')
+
+        tl7.to("#gallery",{
+            right: '0'
+        }, 'height')
+
+        tl7.to(".scroll-img",{
+            marginTop: "-500%",
+        })
+
+        const countdown= () => {
+            const countDate = new Date("April 2, 2024 00:00:00").getTime();
+            const now = new Date().getTime();
+            const gap = countDate - now;
+
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+
+            const textDay = Math.floor(gap / day);
+            const textHour = Math.floor((gap % day) / hour);
+            const textMinute = Math.floor((gap % hour) / minute);
+            const textSecond = Math.floor((gap % minute) / second);
+            
+            document.querySelector(".day").innerText = textDay;
+            document.querySelector(".hour").innerText = textHour;
+            document.querySelector(".minute").innerText = textMinute;
+            document.querySelector(".second").innerText = textSecond;
+        };
+
+        setInterval(countdown, 1000);
+        
+
+    </script>
+</body>
+</html>

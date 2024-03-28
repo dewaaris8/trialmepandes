@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col c-1">
+            <div class="item"><img src="img/1.jpg" alt=""></div>
+            <div class="item"><img src="img/2.jpg" alt=""></div>
+            <div class="item"><img src="img/3.jpg" alt=""></div>
+            <div class="item"><img src="img/4.png" alt=""></div>
+            <div class="item"><img src="img/5.jpg" alt=""></div>
+        </div>
+        <div class="col c-2">
+            <div class="item"><img src="img/2.jpg" alt=""></div>
+            <div class="item"><img src="img/5.jpg" alt=""></div>
+            <div class="item"><img src="img/1.jpg" alt=""></div>
+            <div class="item"><img src="img/3.jpg" alt=""></div>
+            <div class="item"><img src="img/4.png" alt=""></div>
+        </div>
+        <div class="col c-3">
+            <div class="item"><img src="img/1.jpg" alt=""></div>
+            <div class="item"><img src="img/2.jpg" alt=""></div>
+            <div class="item">
+                <div class="bg-undangan">
+                    <div class="absol">
+                        MEPANDES
+                        <h1>Tita, Tuti & Titi</h1>
+                    </div>
+                    <div class="kiri">
+                        
+                    </div>
+                    <div class="kanan">
+                        
+                        <div class="bg-invited">
+                            <div class="invited">
+                                <p>kepada Bpk/Ibu/Saudara/I: <br>
+                                    <span>Indrajaya</span> 
+                                </p>
+                                <div class="btn-open">
+                                    <i>I</i>
+                                    <a href="open.html">
+                                        Bukan Undangan
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            <div class="cover">
+                
+            </div></div>
+            <div class="item"><img src="img/3.jpg" alt=""></div>
+            <div class="item"><img src="img/5.jpg" alt=""></div>
+        </div>
+        <div class="col c-4">
+            <div class="item"><img src="img/1.jpg" alt=""></div>
+            <div class="item"><img src="img/2.jpg" alt=""></div>
+            <div class="item"><img src="img/3.jpg" alt=""></div>
+            <div class="item"><img src="img/4.png" alt=""></div>
+            <div class="item"><img src="img/5.jpg" alt=""></div>
+        </div>
+        <div class="col c-5">
+            <div class="item"><img src="img/1.jpg" alt=""></div>
+            <div class="item"><img src="img/2.jpg" alt=""></div>
+            <div class="item"><img src="img/3.jpg" alt=""></div>
+            <div class="item"><img src="img/4.png" alt=""></div>
+            <div class="item"><img src="img/5.jpg" alt=""></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+        let tl = gsap.timeline({delay: 0})
+        tl.to(".col", {
+            top: 0,
+            duration: 3,
+            ease: "power4.inOut"
+        })
+        tl.to(".c-1 .item", {
+            top: 0,
+            stagger: 0.25,
+            duration: 3,
+            ease: "power4.inOut"
+        }, "-=2")
+        tl.to(".c-3 .item", {
+            top: 0,
+            stagger: 0.25,
+            duration: 3,
+            ease: "power4.inOut"
+        }, "-=4")
+        tl.to(".c-2 .item", {
+            top: 0,
+            stagger: -0.25,
+            duration: 3,
+            ease: "power4.inOut"
+        }, "-=4")
+        tl.to(".c-4 .item", {
+            top: 0,
+            stagger: -0.25,
+            duration: 3,
+            ease: "power4.inOut"
+        }, "-=4")
+        tl.to(".c-5 .item", {
+            top: 0,
+            stagger: 0.25,
+            duration: 3,
+            ease: "power4.inOut"
+        }, "-=4")
+
+        tl.to(".container", {
+            scale: 5.5,
+            duration: 4,
+            ease: "power4.inOut"
+        }, "-=2")
+
+    </script>
+   
+</body>
+</html>
