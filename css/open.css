@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&family=Parisienne&family=Poppins:wght@200;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Baloo+Chettan+2:wght@400..800&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@200;300;400;600;800&display=swap');
 
 *{
     margin: 0;
@@ -7,6 +7,7 @@
 }
 
 html, body{
+    overflow-x: hidden;
     background-color: #F8FAE5;
 }
 
@@ -22,8 +23,34 @@ a{
 
 
 .bg-undangan{
+    background-color: #784522;
     width: 100%;
     height: 100vh;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+.bg-undangan h1{
+    font-size: 64px;
+    word-spacing: 2px;
+}
+
+.bg-undangan .nama{
+    margin-top: 40px;
+    font-size: 96px;
+    font-weight: 400;
+    font-family: "Parisienne", cursive;
+}
+
+.garis{
+    width: 110px;
+    height: 3px;
+    border-radius: 10px;
+    margin: 20px auto;
+    background-color: #784522;
 }
 
 .bg-undangan img{
@@ -39,10 +66,13 @@ a{
 
 .title-nama{
     font-size: 85px;
-    padding-top: 100px;
     text-align: center;
     font-family: "Parisienne", cursive;
     font-weight: 400;
+}
+
+.judul{
+    padding-top: 100px;
 }
 
 .garis::after{
@@ -82,28 +112,15 @@ a{
     text-align: center;
 }
 
-.bulet{
-    width: 497px;
-    height: 515px;
-    border-radius: 248px;
-    border: 3px solid #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
 .dlm-bulet{
     width: 433px;
     height: 466px;
-    background-color: #000;
+    background-image: url(../img/org1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-radius: 217px;
 }
-
-.bulet::after{
-    
-}
-
 .bg-countdown{
     width: 100%;
     height: 338px;
@@ -123,13 +140,16 @@ a{
 }
 
 .ket{
+    margin-top: 10px;
     font-size: 15px;
     font-weight: 500;
+    font-family: "Baloo Bhaina 2", sans-serif;
     text-transform: uppercase;
 }
 
 .day,.hour,.minute,.second{
     font-size: 90px;
+    font-family: "Playfair Display", serif;
     font-weight: 400;
 }
 
@@ -156,7 +176,7 @@ a{
     transform: translate(-20%, -50%);
     color: #784522;
     font-size: 5vw;
-    font-family: "poppins";
+    font-family: "Parisienne", cursive;
     font-weight: 400;
 }
 
@@ -167,7 +187,7 @@ a{
     transform: translate(20%, 50%);
     color: #784522;
     font-size: 5vw;
-    font-family: "poppins";
+    font-family: "Parisienne", cursive;
     font-weight: 400;
 }
 
@@ -246,6 +266,7 @@ a{
     font-size: 30px;
     font-family: poppins;
     font-weight: 600;
+    color: #784522;
 }
 
 .text-detail p{
@@ -263,12 +284,73 @@ a{
     width: 80%;
     height: 500px;
     margin: 0px auto;
-    margin-top: 200px;
+    margin-top: 100px;
+    border-radius: 5px;
 }
 
 .map-container{
+    border-radius: 5px;
     width: 97%;
     height: 95%;
+}
+
+.bg-end{
+    height: 787px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #784522;
+}
+
+.bg-end p{
+    text-align: center;
+    width: 500px;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Baloo Chettan 2", sans-serif;
+}
+
+.bg-end h1{
+    margin-top: 30px;
+    text-align: center;
+    width: 600px;
+    font-size: 64px;
+    font-weight: 400;
+    font-family: "Parisienne", cursive;
+}
+
+.img-end{
+    width: 100%;
+}
+
+.satuend{
+    position: absolute;
+    right: 0px;
+    width: 1206.96px;
+    height: 787px;
+}
+.duaend{
+    left: 0;
+    width: 1206.96px;
+    position: absolute;
+    height: 550px;
+}
+
+.btn-map{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-map a{
+    border-radius: 5px;
+    padding: 15px 30px;
+    background-color: #784522;
+    color: #F8FAE5;
 }
 
 
@@ -277,6 +359,31 @@ a{
         text-align: center;
         font-family: "Parisienne", cursive;
         font-size: 40px;
+    }
+
+    .bg-end p{
+        z-index: 99;
+        font-size: 20px;
+        width: 300px;
+    }
+
+
+    .bg-end h1{
+        font-size: 30px;
+    }
+
+    .satuend{
+        position: absolute;
+        right: 0px;
+        width: 500px;
+        height: 400px;
+        top: 300px;
+    }
+    .duaend{
+        left: 0;
+        top: 50px;
+        width: 500px;
+        height: 400px;
     }
 
     .bg-nama p {
@@ -300,8 +407,6 @@ a{
         background-color: #784522;
         width: 90%;
         height: 450px;
-        margin: 0px auto;
-        margin-top: 200px;
     }
 
     .bg-bulet{
@@ -320,8 +425,8 @@ a{
 
     .dlm-bulet{
         width: 300px;
-        height: 350px;
-        background-color: #000;
+        height: 300px;
+        
         border-radius: 217px;
     }
 
@@ -332,23 +437,72 @@ a{
     #our{
         position: absolute;
         top: 0;
-        left: 31%;
-        transform: translate(-5%, -50%);
+        left: 10%;
+        transform: translate(25%, -50%);
         color: #784522;
-        font-size: 5vw;
-        font-family: "poppins";
+        font-size: 10vw;
+        font-family: "Parisienne", cursive;
         font-weight: 400;
+    }
+
+    .day,.hour,.minute,.second{
+        font-size: 45px;
+    }
+
+    .ket{
+        font-size: 10px;
     }
     
     #gallery{
         position: absolute;
         bottom: 0;
-        right: 31%;
-        transform: translate(30%, 50%);
+        right: 10%;
+        transform: translate(5%, 50%);
         color: #784522;
-        font-size: 5vw;
-        font-family: "poppins";
+        font-size: 10vw;
+        font-family: "Parisienne", cursive;
         font-weight: 400;
+    }
+
+    .bg-undangan h1{
+        font-size: 40px;
+        word-spacing: 2px;
+    }
+    
+    .bg-undangan .nama{
+        margin-top: 40px;
+        font-size: 60px;
+        font-weight: 400;
+        font-family: "Parisienne", cursive;
+    }
+
+    .bg-countdown{
+        height: 200px;
+        margin: 100px 0;
+    }
+
+    .bg-save{
+    }
+
+    .detail{
+        flex-direction: column;
+    }
+
+    .detailed{
+        width: 100%;
+    }
+
+    .div-bar{
+        width: 100%;
+        height: 4px;
+    }
+
+    .text-detail h1{
+        font-size: 18px;
+    }
+
+    .text-detail p{
+        font-size: 15px;
     }
 }
 
